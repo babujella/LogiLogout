@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ 	  http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+	<bean id="student1" class="com.tech.SAutowired.Student">
+		<property name="Name" value="Babu_Jella"/>
+		<property name="StudentRollNo" value="1839"/>
+	</bean>
+	
+	<bean id="student2" class="com.tech.SAutowired.Student">
+		<property name="Name" value="Raghu"/>
+		<property name="StudentRollNo" value="1840"/>
+	</bean>
+	
+	<bean id="college" class="com.tech.SAutowired.College">
+		
+	</bean>
+</beans>

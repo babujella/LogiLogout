@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+               
+               <!-- providing property spring will realise devoloper write a setter method to inject this dependency -->
+               <!-- by providing this proprty field we tell to spring hey inject this value to the partiular dependency --> 
+
+	<bean id="Student"
+		class="com.tech.SpringDependencyInjection.Student">
+		<property name="StudentName" value="Babu_Jella" />
+		<property name="StudentRollNo" value="1839" />
+		<property name="Branch" value="Civil_Engineering"></property>
+	</bean>
+	
+	<bean id="Student1" class="com.tech.SpringDependencyInjection.Student">
+		<property name="StudentName" value="Raghu_Kantamsetti"/>
+		<property name="StudentRollNo" value="1840"/>
+		<property name="Branch" value="MBA"/>
+	</bean>
+	
+	<bean id="Student2" class="com.tech.SpringDependencyInjection.Student">
+		<property name="StudentName" value="Kailash_Chaithankar"/>
+		<property name="StudentRollNo" value="1841"/>
+		<property name="Branch" value="CSE"/>
+	</bean>
+	
+	
+</beans>
